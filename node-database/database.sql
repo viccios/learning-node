@@ -1,0 +1,10 @@
+CREATE DATABASE example_db;
+
+USE example_db;
+
+CREATE TABLE users (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

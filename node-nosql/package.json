@@ -1,5 +1,5 @@
 {
-  "name": "express",
+  "name": "nosql",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -10,6 +10,9 @@
     "start": "node ./server.js",
     "dev": "node --watch ./server.js"
   },
+  "imports": {
+    "#*": "./*"
+  },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "eslint": "^9.32.0",
@@ -18,6 +21,6 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "morgan": "^1.10.1"
+    "mongoose": "^8.17.0"
   }
 }

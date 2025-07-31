@@ -1,0 +1,38 @@
+@baseURL = http://localhost:3000
+@userID = [your-user-id]
+
+
+### 1. Create a new user (POST)
+
+POST {{baseURL}}/users/ HTTP/1.1
+Content-Type: application/json
+
+{
+ "name": "Carlos",
+ "age": 28,
+ "email": "carlos@example.com"
+}
+
+
+### 2. Get all users (GET)
+
+GET {{baseURL}}/users/ HTTP/1.1
+Content-Type: application/json
+
+
+### 3. Update an existing user (PUT)
+
+PUT {{baseURL}}/users/{{userID}} HTTP/1.1
+Content-Type: application/json
+
+{
+ "name": "Carlos Silva",
+ "age": 30,
+ "email": "carlos.silva@example.com"
+}
+
+
+### 4. Delete a user (DELETE)
+
+DELETE {{baseURL}}/users/{{userID}} HTTP/1.1
+Content-Type: application/json
